@@ -10,8 +10,8 @@ However, only IE10 and up, and prefereably latest (but not limited to latest) Fi
 
 ##Demo?
 
-Supporting site with some demos cam be found here: [Cross Browser Flex Layout](http://flex.illusiana.net)
+Supporting site with some demos can be found here: [Cross Browser Flex Layout](http://flex.illusiana.net)
 
 ##Usage
 
-Just drop compiled layout.css file from layout folder and you are good to go. More on how to use classes see supporting website.
+Just drop compiled layout.css file from layout folder and you are good to go. More on how to use classes please refer to supporting website.
