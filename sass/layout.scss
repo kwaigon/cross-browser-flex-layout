@@ -1,0 +1,150 @@
+@import "mixins";
+
+.ly-flex {
+	@include flexDisplay;
+}
+
+.ly-vbox {
+	@include flexDisplay;
+	@include flexDirection(column);
+}
+
+.ly-hbox {
+	@include flexDisplay;
+	@include flexDirection(row);
+}
+
+
+.ly-justify-start {
+	@include flexJustify(flex-start);
+}
+.ly-justify-center {
+	@include flexJustify(center);
+}
+.ly-justify-end {
+	@include flexJustify(flex-end);
+}
+
+.ly-justify-space-between {
+	@include flexJustify(space-between);
+}
+
+.ly-justify-space-around {
+	@include flexJustify(space-around);
+}
+
+.ly-align-start{
+	@include flexAlign(flex-start);
+}
+
+.ly-align-end {
+	@include flexAlign(flex-end);
+}
+
+.ly-align-center {
+	@include flexAlign(center);
+}
+
+.ly-align-stretch {
+	@include flexAlign(stretch);
+}
+
+.ly-align-baseline {
+	@include flexAlign(baseline);
+}
+
+
+.ly-flex-fix {
+	flex:0 0 auto;
+}
+
+.ly-flex-1 {
+	@include flex(1,1,0);
+}
+.ly-flex-2 {
+	@include flex(2,2,0);
+}
+.ly-flex-3 {
+	@include flex(3,3,0);
+}
+.ly-flex-4 {
+	@include flex(4,4,0);
+}
+.ly-flex-5 {
+	@include flex(5,5,0);
+}
+.ly-flex-6 {
+	@include flex(6,6,0);
+}
+.ly-flex-7 {
+	@include flex(7,7,0);
+}
+.ly-flex-8 {
+	@include flex(8,8,0);
+}
+.ly-flex-9 {
+	@include flex(9,9,0);
+}
+.ly-flex-10 {
+	@include flex(10,10,0);
+}
+.ly-flex-11 {
+	@include flex(11,11,0);
+}
+.ly-flex-12 {
+	@include flex(12,12,0);
+}
+.ly-flex-13 {
+	@include flex(13,13,0);
+}
+.ly-flex-14 {
+	@include flex(14,14,0);
+}
+.ly-flex-15 {
+	@include flex(15,15,0);
+}
+.ly-flex-16 {
+	@include flex(16,16,0);
+}
+.ly-flex-17 {
+	@include flex(17,17,0);
+}
+.ly-flex-18 {
+	@include flex(18,18,0);
+}
+.ly-flex-19 {
+	@include flex(19,19,0);
+}
+.ly-flex-20 {
+	@include flex(20,20,0);
+}
+
+.ly-wrap {
+	@include flexWrap(wrap);
+}
+
+.ly-nowrap {
+	@include flexWrap(nowrap);
+}
+
+.ly-wrap-reverse {
+	@include flexWrap(wrap-reverse);
+}
+
+.ly-noscroll {
+	overflow:hidden;
+}
+
+.ly-scroll {
+	overflow:auto;
+}
+
+.ly-scroll-x {
+	overflow-y:none;
+	overflow-x:auto;
+}
+
+.ly-scroll-y{
+	overflow-y:auto;
+	overflow-x:none;
+}

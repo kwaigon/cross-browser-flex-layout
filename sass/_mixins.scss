@@ -1,0 +1,123 @@
+//----------------------------
+//
+//		Overflow MIXINS
+//
+//----------------------------
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin nowrap {
+	white-space:nowrap;
+}
+
+//----------------------------
+//
+//		FlexBox MIXINS
+//
+//----------------------------
+
+@mixin displayFlex($flexDirection:row, $justifyContent:flex-start, $flex:none, $flexWrap:nowrap) {
+	// -webkit-flex:
+	// -ms-flex:
+	// -moz-flex:
+	display:-webkit-flex;
+	display:flex;
+
+	-webkit-flex: $flex;
+	-ms-flex: $flex;
+	-moz-flex: $flex;
+	flex: $flex;
+	//flex-wrap: nowrap | wrap | wrap-reverse;
+	//justify-content: flex-start | flex-end | center | space-between | space-around;
+
+	-webkit-flex-direction: $flexDirection;
+	-moz-flex-direction: $flexDirection;
+	flex-direction: $flexDirection;
+
+	-webkit-flex-wrap: $flexWrap;
+	-moz-flex-wrap: $flexWrap;
+	flex-wrap: $flexWrap;
+
+	-webkit-justify-content: $justifyContent;
+	-moz-justify-content: $justifyContent;
+	justify-content: $justifyContent;
+
+}
+
+@mixin flexDisplay {
+	display:-webkit-flex;
+	display:flex;
+}
+
+
+@mixin flexDirection($flexDirection:row) {
+	-webkit-flex-direction: $flexDirection;
+	-moz-flex-direction: $flexDirection;
+	flex-direction: $flexDirection;
+}
+
+
+@mixin flex($flexGrow:none, $flexShrink:none, $flexBasis:0) {
+	//flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
+	-webkit-flex: $flexGrow $flexShrink $flexBasis; 
+	
+	-moz-flex: $flexGrow $flexShrink $flexBasis;
+	flex: $flexGrow $flexShrink $flexBasis;
+	-ms-flex: $flexGrow;
+}
+
+@mixin flexJustify($justifyContent:flex-start) {
+	//justify-content: flex-start|flex-end|center|space-between|space-around|initial|inherit;
+	-webkit-justify-content: $justifyContent;
+	-moz-justify-content: $justifyContent;
+	justify-content: $justifyContent;
+}
+
+@mixin flexAlign($alignItems:stretch) {
+	-webkit-align-items: $alignItems;
+	align-items: $alignItems;
+}
+
+@mixin flexWrap ($flexWrap:nowrap){
+	//flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;
+	-webkit-flex-wrap: $flexWrap;
+	-moz-flex-wrap: $flexWrap;
+	flex-wrap: $flexWrap;
+}
+
+
+//----------------------------
+//
+//	Transform/Transition MIXINS
+//
+//----------------------------
+
+@mixin transform($transforms) {
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin transform-origin($transOrigin) {
+    -moz-transform-origin: $transOrigin;
+    -ms-transform-origin: $transOrigin;
+    -webkit-transform-origin: $transOrigin;
+    transform-origin: $transOrigin;
+}
+
+@mixin perspective($pers) {
+    -webkit-perspective: 2600px;
+    perspective: 2600px;
+}
+
+@mixin transition($transition) {
+    -o-transition: $transition;
+    -moz-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
