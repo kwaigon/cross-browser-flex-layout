@@ -1,3 +1,5 @@
+*** deprecated ****
+
 # Cross Browser Flex Layout
 
 This is CSS-only cross browser solution for using so called "flex-layout". It includes compiled css (just to drop in your project), as well as SASS which can be changed and re-compiled.
